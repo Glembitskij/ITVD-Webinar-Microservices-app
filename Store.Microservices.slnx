@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Store.Orders.Api/Store.Orders.Api.csproj" Id="02fcb6b2-441f-4e8c-89f5-7f38c331b048" />
+  <Project Path="Store.Stock.Api/Store.Stock.Api.csproj" Id="c7797929-1123-466b-9975-9762b074304d" />
+</Solution>
