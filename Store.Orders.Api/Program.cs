@@ -15,7 +15,8 @@ builder.Services.AddDbContext<OrdersDbContext>(options =>
 // HttpClient для зв'язку зі StockService
 builder.Services.AddHttpClient<IStockClient, StockClient>(client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5291/");
+    var stockUrl = builder.Configuration["StockApiUrl"] ?? "http://localhost:5291/";
+    client.BaseAddress = new Uri(stockUrl);
 });
 
 var app = builder.Build();
